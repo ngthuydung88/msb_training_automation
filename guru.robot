@@ -2,14 +2,16 @@
 Library    SeleniumLibrary
 
 *** Test Cases ***
-[AUT_01] - Sản phẩm đầu tiên tìm kiếm được
-    [Documentation]    Chọn mua sản phẩm
-    [Tags]    demo_tiki_tag
-    Truy cập vào trang    https://tiki.vn/    chrome
-    Nhập vào ô tìm kiếm    //input[@data-view-id='main_search_form_input']    nồi chiên
-    Ấn button Tìm kiếm    //button[@data-view-id="main_search_form_button"] 
-    Nhấn vào sản phẩm thứ    4
-    Click Button    xpath=.//*[@id="__next"]
+[AUT_01] - Đăng nhập vào GURU99
+    [Documentation] 
+    [Tags]    
+    Truy cập vào trang    https://demo.guru99.com/test/login.html    chrome
+    Sleep    5s
+    Input Text    xpath=.//input[@name="email"]    camtu11396@gmail.com
+    Sleep    4s
+   Input Text    xpath=.//input[@id='passwd']    123456789 
+    Click Button    xpath=.//button[@id='SubmitLogin']
+
 
 *** Keywords ***
 Truy cập vào trang     #nên viết tiếng anh
@@ -30,6 +32,14 @@ Nhấn vào sản phẩm thứ
     Wait Until Element Is Visible    //div[@data-view-id = "product_list_container"]/div[${index}]    10s
     Click Element    //div[@data-view-id = "product_list_container"]/div[${index}]
 
-Ấn vào tên sản phẩm có chứa chữ
+Tên sản phẩm có chứa chữ
     [Arguments]    ${text}
-    Wait Until Element Is Visible    //h1[contains(text(), "${text}")]    10s
+    Wait Until Element Is Visible    //h1[contains(text(), "${text}")]    3s
+
+
+Điền vào button Email address
+    [Arguments]    ${locator}    ${text}
+    Click Element    ${locator}
+    Sleep    1s
+    Input Text    ${locator}    ${text}
+

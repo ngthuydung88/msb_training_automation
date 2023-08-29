@@ -1,0 +1,8 @@
+6_results/
+.vscode/
+*.xml
+*.pyc
+*.html
+*.iml
+.idea
+a.robot

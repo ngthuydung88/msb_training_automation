@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230829 17:00:46.579" rpa="false" schemaversion="4">
+<suite id="s1" name="Msb" source="c:\Users\HP\Documents\GitHub\msb_training_automation\msb.robot">
+<test id="s1-t1" name="[AUT_01] - Tìm kiếm MSB" line="5">
+<kw name="Truy cập vào trang">
+<arg>https://google.com/</arg>
+<arg>chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230829 17:00:46.768" level="INFO">Opening browser 'chrome' to base url 'https://google.com/'.</msg>
+<status status="PASS" starttime="20230829 17:00:46.767" endtime="20230829 17:00:49.646"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230829 17:00:49.646" endtime="20230829 17:00:49.780"/>
+</kw>
+<status status="PASS" starttime="20230829 17:00:46.766" endtime="20230829 17:00:49.781"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=.//textarea[@id='APjFqb']</arg>
+<arg>MSB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 17:00:49.784" level="INFO">Typing text 'MSB' into text field 'xpath=.//textarea[@id='APjFqb']'.</msg>
+<status status="PASS" starttime="20230829 17:00:49.781" endtime="20230829 17:00:49.862"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230829 17:00:52.865" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230829 17:00:49.864" endtime="20230829 17:00:52.865"/>
+</kw>
+<kw name="Nhấn vào sản phẩm thứ">
+<arg>1</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@data-view-id = "product_list_container"]/div[${index}]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230829 17:01:03.093" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230829 17:01:03.093" level="FAIL">Element '//div[@data-view-id = "product_list_container"]/div[1]' not visible after 10 seconds.</msg>
+<status status="FAIL" starttime="20230829 17:00:52.868" endtime="20230829 17:01:03.097"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@data-view-id = "product_list_container"]/div[${index}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230829 17:01:03.097" endtime="20230829 17:01:03.098"/>
+</kw>
+<status status="FAIL" starttime="20230829 17:00:52.867" endtime="20230829 17:01:03.098"/>
+</kw>
+<status status="FAIL" starttime="20230829 17:00:46.764" endtime="20230829 17:01:03.099">Element '//div[@data-view-id = "product_list_container"]/div[1]' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230829 17:00:46.584" endtime="20230829 17:01:03.102"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Msb">Msb</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
