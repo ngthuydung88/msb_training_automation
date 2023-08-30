@@ -1,0 +1,16 @@
+python-dateutil
+requests
+robotframework
+robotframework-csvlibrary
+robotframework-databaselibrary
+robotframework-datadriver
+robotframework-httplibrary
+robotframework-metrics
+robotframework-requests
+robotframework-seleniumlibrary
+robotframework-sshlibrary
+robotframework-tidy
+openpyxl
+pandas
+webdrivermanager
+chromedriver
