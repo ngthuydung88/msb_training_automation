@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230828 21:20:26.345" rpa="false" schemaversion="4">
+<suite id="s1" name="Homework" source="C:\Users\LAM\Documents\workplace\homework">
+<suite id="s1-s1" name="Testcases" source="C:\Users\LAM\Documents\workplace\homework\testcases">
+<suite id="s1-s1-s1" name="Bai1" source="C:\Users\LAM\Documents\workplace\homework\testcases\bai1.robot">
+<test id="s1-s1-s1-t1" name="bai1" line="6">
+<kw name="Open Webpage guru99" library="common_keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${GURU PAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 21:20:26.557" level="INFO">Opening browser 'CHROME' to base url 'https://demo.guru99.com/test/login.html'.</msg>
+<status status="PASS" starttime="20230828 21:20:26.556" endtime="20230828 21:20:32.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 21:20:32.312" endtime="20230828 21:20:32.433"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 21:20:35.435" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230828 21:20:32.433" endtime="20230828 21:20:35.435"/>
+</kw>
+<status status="PASS" starttime="20230828 21:20:26.555" endtime="20230828 21:20:35.435"/>
+</kw>
+<kw name="Login guru99" library="login_guru99_keywords">
+<arg>${valid_username}</arg>
+<arg>${valid_password}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 21:20:35.437" level="INFO">Clicking element '//label[text()="Email address"]/following-sibling::input'.</msg>
+<status status="PASS" starttime="20230828 21:20:35.436" endtime="20230828 21:20:35.487"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 21:20:35.488" level="INFO">Typing text 'admin@gmail.com' into text field '//label[text()="Email address"]/following-sibling::input'.</msg>
+<status status="PASS" starttime="20230828 21:20:35.487" endtime="20230828 21:20:35.557"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230828 21:20:35.558" level="INFO">Clicking element '//input[@id="passwd"]'.</msg>
+<status status="PASS" starttime="20230828 21:20:35.557" endtime="20230828 21:20:35.599"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 21:20:35.601" level="INFO">Typing text '123456aA@' into text field '//input[@id="passwd"]'.</msg>
+<status status="PASS" starttime="20230828 21:20:35.600" endtime="20230828 21:20:35.652"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230828 21:20:35.653" level="INFO">Clicking button '//button[@id="SubmitLogin"]'.</msg>
+<status status="PASS" starttime="20230828 21:20:35.652" endtime="20230828 21:20:37.458"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 21:20:39.459" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 21:20:37.458" endtime="20230828 21:20:39.459"/>
+</kw>
+<status status="PASS" starttime="20230828 21:20:35.436" endtime="20230828 21:20:39.459"/>
+</kw>
+<kw name="Verify text" library="login_guru99_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${label_success}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230828 21:20:39.471" level="INFO">Current page contains element '//div[@class="error-box"]//h3[text()="Successfully Logged in..."]'.</msg>
+<status status="PASS" starttime="20230828 21:20:39.460" endtime="20230828 21:20:39.472"/>
+</kw>
+<status status="PASS" starttime="20230828 21:20:39.460" endtime="20230828 21:20:39.472"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 21:20:39.472" endtime="20230828 21:20:41.603"/>
+</kw>
+<doc>Bài số 1</doc>
+<tag>bai_demo_1</tag>
+<status status="PASS" starttime="20230828 21:20:26.554" endtime="20230828 21:20:41.603"/>
+</test>
+<status status="PASS" starttime="20230828 21:20:26.374" endtime="20230828 21:20:41.604"/>
+</suite>
+<status status="PASS" starttime="20230828 21:20:26.371" endtime="20230828 21:20:41.606"/>
+</suite>
+<status status="PASS" starttime="20230828 21:20:26.349" endtime="20230828 21:20:41.607"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">bai_demo_1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Homework">Homework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcases">Homework.Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bai1">Homework.Testcases.Bai1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

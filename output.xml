@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230904 16:50:00.756" rpa="false" schemaversion="4">
+<suite id="s1" name="Homework" source="C:\Users\LAM\Documents\workplace\homework">
+<suite id="s1-s1" name="4 Testcases" source="C:\Users\LAM\Documents\workplace\homework\4_testcases">
+<suite id="s1-s1-s1" name="Bai1" source="C:\Users\LAM\Documents\workplace\homework\4_testcases\bai1.robot">
+<test id="s1-s1-s1-t1" name="bai2" line="19">
+<kw name="Open Webpage tiki" library="common_keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${TIKI PAGE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230904 16:50:00.963" level="INFO">Opening browser 'CHROME' to base url 'https://tiki.vn'.</msg>
+<status status="PASS" starttime="20230904 16:50:00.962" endtime="20230904 16:50:03.453"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230904 16:50:03.453" endtime="20230904 16:50:03.578"/>
+</kw>
+<status status="PASS" starttime="20230904 16:50:00.962" endtime="20230904 16:50:03.578"/>
+</kw>
+<kw name="search keyword" library="tiki_keywords">
+<arg>${tiki_type}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230904 16:50:03.580" level="INFO">Clicking element '//input[@data-view-id="main_search_form_input"]'.</msg>
+<status status="PASS" starttime="20230904 16:50:03.579" endtime="20230904 16:50:03.741"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_search}</arg>
+<arg>${value_type}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230904 16:50:03.741" level="INFO">Typing text 'nồi chiên' into text field '//input[@data-view-id="main_search_form_input"]'.</msg>
+<status status="PASS" starttime="20230904 16:50:03.741" endtime="20230904 16:50:03.976"/>
+</kw>
+<status status="PASS" starttime="20230904 16:50:03.579" endtime="20230904 16:50:03.976"/>
+</kw>
+<kw name="Choice key" library="tiki_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${choice_value}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230904 16:50:03.977" endtime="20230904 16:50:04.209"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${choice_value}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230904 16:50:04.209" level="INFO">Clicking element '//a[@data-view-id="search_suggestion_keyword_item"]//div[text()="nồi chiên không dầu"]'.</msg>
+<status status="PASS" starttime="20230904 16:50:04.209" endtime="20230904 16:50:04.262"/>
+</kw>
+<status status="PASS" starttime="20230904 16:50:03.977" endtime="20230904 16:50:04.262"/>
+</kw>
+<kw name="Choice by element number" library="tiki_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${product_4}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230904 16:50:04.263" endtime="20230904 16:50:06.326"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${product_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230904 16:50:06.327" level="INFO">Clicking element '//div[@data-view-id="product_list_container"]/div[4]'.</msg>
+<status status="PASS" starttime="20230904 16:50:06.326" endtime="20230904 16:50:06.508"/>
+</kw>
+<status status="PASS" starttime="20230904 16:50:04.262" endtime="20230904 16:50:06.509"/>
+</kw>
+<kw name="Click buynow Button" library="tiki_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_BuyNow}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230904 16:50:06.509" endtime="20230904 16:50:07.306"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_BuyNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230904 16:50:07.307" level="INFO">Clicking element '//div[@class="left"]//button[contains(text(),'Chọn mua')]'.</msg>
+<status status="PASS" starttime="20230904 16:50:07.307" endtime="20230904 16:50:07.713"/>
+</kw>
+<status status="PASS" starttime="20230904 16:50:06.509" endtime="20230904 16:50:07.713"/>
+</kw>
+<kw name="Verify text Hello" library="tiki_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${label_hello}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230904 16:50:07.713" endtime="20230904 16:50:07.942"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${label_hello}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230904 16:50:07.955" level="INFO">Current page contains element '//div[@role="dialog"]//h4[contains(text(),'Xin chào')]'.</msg>
+<status status="PASS" starttime="20230904 16:50:07.942" endtime="20230904 16:50:07.955"/>
+</kw>
+<status status="PASS" starttime="20230904 16:50:07.713" endtime="20230904 16:50:07.955"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230904 16:50:07.955" endtime="20230904 16:50:10.108"/>
+</kw>
+<doc>Bài demo tiki</doc>
+<tag>tiki_demo</tag>
+<status status="PASS" starttime="20230904 16:50:00.961" endtime="20230904 16:50:10.108"/>
+</test>
+<status status="PASS" starttime="20230904 16:50:00.780" endtime="20230904 16:50:10.109"/>
+</suite>
+<status status="PASS" starttime="20230904 16:50:00.778" endtime="20230904 16:50:10.111"/>
+</suite>
+<status status="PASS" starttime="20230904 16:50:00.757" endtime="20230904 16:50:10.112"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tiki_demo</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Homework">Homework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="4 Testcases">Homework.4 Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bai1">Homework.4 Testcases.Bai1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
