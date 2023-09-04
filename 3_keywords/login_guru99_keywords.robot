@@ -11,7 +11,7 @@ Login guru99
     # Click Element     ${input_password}
     Input Text    ${input_password}    ${password}
     Click Button    ${btn_login}
-    Sleep    2s
+    # Sleep    2s
 Verify text    
     Page Should Contain Element    ${label_success}
     
