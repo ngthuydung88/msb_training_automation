@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../6_report/import.robot
 
-Test Setup    login vào trang    https://demo.guru99.com/telecom/index.html#google_vignette    chrome
+Test Setup    login vào trang    https://demo.guru99.com/telecom/index.html    chrome
 Test Teardown    Close Browser
 
 *** Test Cases ***
