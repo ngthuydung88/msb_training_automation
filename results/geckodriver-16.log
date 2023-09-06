@@ -1,0 +1,48 @@
+1693281563568	geckodriver	INFO	Listening on 127.0.0.1:63456
+1693281566608	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63457" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hanglt26\\AppData\\Local\\Temp\\rust_mozprofile1ToZ8y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1693281566932	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693281566987	Marionette	INFO	Listening on port 63469
+WebDriver BiDi listening on ws://127.0.0.1:63457
+Read port: 63469
+1693281567160	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+[GFX1-]: Failed to get D3D11VideoDevice: 0x80004002
+[GFX1-]: Handling webrender error 5
+console.error: Region.sys.mjs: "Error fetching region" (new SyntaxError("JSON.parse: unexpected character at line 1 column 1 of the JSON data", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 411))
+DevTools listening on ws://127.0.0.1:63457/devtools/browser/a5da2e3b-3cc5-4dc9-a732-f773c1f6c8fe
+JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/126c5b0a3de3b866fc5f7fe9817c84e8bd8d87cd.4c4e330d954eb7bfc873.js, line 1: unreachable code after return statement
+JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/126c5b0a3de3b866fc5f7fe9817c84e8bd8d87cd.4c4e330d954eb7bfc873.js, line 1: unreachable code after return statement
+JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/126c5b0a3de3b866fc5f7fe9817c84e8bd8d87cd.4c4e330d954eb7bfc873.js, line 1: unreachable code after return statement
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript error: https://tiki.vn/~partytown/partytown-sandbox-sw.html?1693281574928, line 2: NS_ERROR_NOT_INITIALIZED
+console.error: Region.sys.mjs: "Error fetching region" (new SyntaxError("JSON.parse: unexpected character at line 1 column 1 of the JSON data", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 411))
+console.error: (new Error("Polling for changes failed: Unexpected content-type \"text/html\".", "resource://services-settings/remote-settings.sys.mjs", 324))
+1693281597485	addons.xpi	ERROR	System addon update list error Error: got node name: parsererror, expected: updates
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/main-37013f0e6fc7057e2981.js, line 1: Script terminated by timeout at:
+c@https://frontend.tikicdn.com/_desktop-next/_next/static/chunks/main-37013f0e6fc7057e2981.js:1:17727
+
+1693281809304	Marionette	INFO	Stopped listening on port 63469
+Dynamically enable window occlusion 1
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 5236, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20696, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230906 17:08:36.338" rpa="false" schemaversion="4">
+<suite id="s1" name="Auto" source="C:\Users\hanglt26\Desktop\New folder\Auto">
+<suite id="s1-s1" name="5 Testcase" source="C:\Users\hanglt26\Desktop\New folder\Auto\5_Testcase">
+<suite id="s1-s1-s1" name="Bài 2.Auto Guru 99" source="C:\Users\hanglt26\Desktop\New folder\Auto\5_Testcase\Bài 2.Auto_Guru_99.robot">
+<test id="s1-s1-s1-t1" name="[TCs_01] - Đăng nhập Guru 99" line="8">
+<kw name="Mở trang web bằng trình duyệt" library="Login_Guru99_keywords" type="SETUP">
+<arg>https://demo.guru99.com/test/login.html</arg>
+<arg>firefox</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230906 17:08:36.511" level="INFO">Opening browser 'firefox' to base url 'https://demo.guru99.com/test/login.html'.</msg>
+<status status="PASS" starttime="20230906 17:08:36.511" endtime="20230906 17:08:53.549"/>
+</kw>
+<status status="PASS" starttime="20230906 17:08:36.510" endtime="20230906 17:08:53.549"/>
+</kw>
+<kw name="Login guru99 thành công" library="Login_Guru99_keywords">
+<arg>Hanglt@gmail.com</arg>
+<arg>11111111</arg>
+<arg>20s</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${inp_email}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230906 17:08:53.550" endtime="20230906 17:08:53.567"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inp_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 17:08:53.568" level="INFO">Typing text 'Hanglt@gmail.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230906 17:08:53.568" endtime="20230906 17:08:53.597"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${inp_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 17:08:53.598" level="INFO">Typing password into text field '//input[@id="passwd"]'.</msg>
+<msg timestamp="20230906 17:08:53.603" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230906 17:08:53.613" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230906 17:08:53.597" endtime="20230906 17:08:53.614"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230906 17:08:53.615" level="INFO">Clicking element '//button[@name="SubmitLogin"]'.</msg>
+<status status="PASS" starttime="20230906 17:08:53.614" endtime="20230906 17:08:57.275"/>
+</kw>
+<status status="PASS" starttime="20230906 17:08:53.550" endtime="20230906 17:08:57.276"/>
+</kw>
+<kw name="Verify màn hình" library="Login_Guru99_keywords">
+<arg>20s</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${verify_text_guru99}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230906 17:08:57.277" endtime="20230906 17:08:57.285"/>
+</kw>
+<status status="PASS" starttime="20230906 17:08:57.276" endtime="20230906 17:08:57.285"/>
+</kw>
+<doc>Đăng nhập Guru 99</doc>
+<tag>demo_Guru99_tagro</tag>
+<status status="PASS" starttime="20230906 17:08:36.508" endtime="20230906 17:08:57.285"/>
+</test>
+<status status="PASS" starttime="20230906 17:08:36.359" endtime="20230906 17:08:57.286"/>
+</suite>
+<status status="PASS" starttime="20230906 17:08:36.357" endtime="20230906 17:08:57.287"/>
+</suite>
+<status status="PASS" starttime="20230906 17:08:36.341" endtime="20230906 17:08:57.288"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">demo_Guru99_tagro</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Auto">Auto</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="5 Testcase">Auto.5 Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Bài 2.Auto Guru 99">Auto.5 Testcase.Bài 2.Auto Guru 99</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
