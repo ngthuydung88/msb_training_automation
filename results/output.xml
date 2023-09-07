@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230906 06:28:38.549" rpa="false" schemaversion="4">
+<suite id="s1" name="BTVN" source="C:\Users\DUNG\Desktop\BTVN\BTVN">
+<suite id="s1-s1" name="5 Testcase" source="C:\Users\DUNG\Desktop\BTVN\BTVN\5_testcase">
+<suite id="s1-s1-s1" name="Guru Customer Testcase" source="C:\Users\DUNG\Desktop\BTVN\BTVN\5_testcase\guru_customer_testcase.robot">
+<test id="s1-s1-s1-t1" name="[TC_01] - Verify Guru customer" line="8">
+<kw name="login vào trang" library="guru_customer_keyword" type="SETUP">
+<arg>https://demo.guru99.com/telecom/index.html#google_vignette</arg>
+<arg>chrome</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230906 06:28:39.070" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/telecom/index.html#google_vignette'.</msg>
+<msg timestamp="20230906 06:28:39.629" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\DUNG\Documents\webdriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.179); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20230906 06:28:39.069" endtime="20230906 06:28:44.699"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230906 06:28:44.699" endtime="20230906 06:28:44.883"/>
+</kw>
+<status status="PASS" starttime="20230906 06:28:39.068" endtime="20230906 06:28:44.883"/>
+</kw>
+<kw name="Chọn thêm khách hàng" library="guru_customer_keyword">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_addCustomer}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230906 06:28:44.885" endtime="20230906 06:28:44.928"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_addCustomer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:44.931" level="INFO">Clicking element '//h3/a[text()='Add Customer']'.</msg>
+<status status="PASS" starttime="20230906 06:28:44.929" endtime="20230906 06:28:46.228"/>
+</kw>
+<status status="PASS" starttime="20230906 06:28:44.884" endtime="20230906 06:28:46.229"/>
+</kw>
+<kw name="keyword tham số truyền vào" library="guru_customer_keyword">
+<arg>Done</arg>
+<arg>Dung</arg>
+<arg>nguyen</arg>
+<arg>ngthuydung88@gmail.com</arg>
+<arg>dghdhdfhhew</arg>
+<arg>0777222767</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//label[contains(text(),'${index}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230906 06:28:46.233" endtime="20230906 06:28:46.550"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[contains(text(),'${index}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:46.552" level="INFO">Clicking element '//label[contains(text(),'Done')]'.</msg>
+<status status="PASS" starttime="20230906 06:28:46.550" endtime="20230906 06:28:46.647"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_firstname}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:46.649" level="INFO">Typing text 'Dung' into text field '//input[@id="fname"]'.</msg>
+<status status="PASS" starttime="20230906 06:28:46.647" endtime="20230906 06:28:46.769"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:46.772" level="INFO">Typing text 'nguyen' into text field '//input[@id="lname"]'.</msg>
+<status status="PASS" starttime="20230906 06:28:46.770" endtime="20230906 06:28:46.883"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:46.884" level="INFO">Typing text 'ngthuydung88@gmail.com' into text field '//input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230906 06:28:46.883" endtime="20230906 06:28:47.014"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_message}</arg>
+<arg>${message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:47.015" level="INFO">Typing text 'dghdhdfhhew' into text field '//textarea[@id="message"]'.</msg>
+<status status="PASS" starttime="20230906 06:28:47.014" endtime="20230906 06:28:47.130"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_mobile}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:47.133" level="INFO">Typing text '0777222767' into text field '//input[@id="telephoneno"]'.</msg>
+<status status="PASS" starttime="20230906 06:28:47.130" endtime="20230906 06:28:47.255"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:47.257" level="INFO">Clicking element '//input[@name="submit"]'.</msg>
+<status status="PASS" starttime="20230906 06:28:47.256" endtime="20230906 06:28:48.794"/>
+</kw>
+<status status="PASS" starttime="20230906 06:28:46.231" endtime="20230906 06:28:48.795"/>
+</kw>
+<kw name="Lấy Customer ID" library="guru_customer_keyword">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${lbl_CustomerID}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230906 06:28:48.799" endtime="20230906 06:28:49.042"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Customer_ID}</var>
+<arg>${lbl_CustomerID}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:49.083" level="INFO">${Customer_ID} = 540594</msg>
+<status status="PASS" starttime="20230906 06:28:49.043" endtime="20230906 06:28:49.084"/>
+</kw>
+<kw name="Set Shared Variable" library="guru_customer_keyword">
+<arg>${Customer_ID}</arg>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${share_value}</arg>
+<arg>${value}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230906 06:28:49.088" level="INFO">${share_value} = 540594</msg>
+<status status="PASS" starttime="20230906 06:28:49.087" endtime="20230906 06:28:49.089"/>
+</kw>
+<status status="PASS" starttime="20230906 06:28:49.084" endtime="20230906 06:28:49.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_Home}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230906 06:28:49.091" level="INFO">Clicking element '//ul[@class='actions']//a[text()='Home']'.</msg>
+<status status="PASS" starttime="20230906 06:28:49.089" endtime="20230906 06:28:49.192"/>
+</kw>
+<status status="PASS" starttime="20230906 06:28:48.797" endtime="20230906 06:28:49.193"/>
+</kw>
+<kw name="Ấn nút Add Tariff Plan to Customer" library="guru_customer_keyword">
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20230906 06:28:49.196" endtime="20230906 06:28:49.885"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${btn_Add Tarif}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230906 06:28:55.281" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230906 06:28:55.281" level="FAIL">Element '//h3/a[text()='Add Tariff Plan to Customer']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20230906 06:28:49.886" endtime="20230906 06:28:55.289"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_Add Tarif}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230906 06:28:55.290" endtime="20230906 06:28:55.291"/>
+</kw>
+<status status="FAIL" starttime="20230906 06:28:49.194" endtime="20230906 06:28:55.291"/>
+</kw>
+<kw name="Nhập Customer ID vừa tạo Nhấn Submit" library="guru_customer_keyword">
+<status status="NOT RUN" starttime="20230906 06:28:55.293" endtime="20230906 06:28:55.293"/>
+</kw>
+<kw name="Kiểm tra text hiển thị: Approved Tariff Plans" library="guru_customer_keyword">
+<status status="NOT RUN" starttime="20230906 06:28:55.295" endtime="20230906 06:28:55.296"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230906 06:28:55.297" endtime="20230906 06:28:57.499"/>
+</kw>
+<doc>verify shows text</doc>
+<tag>step1</tag>
+<status status="FAIL" starttime="20230906 06:28:39.066" endtime="20230906 06:28:57.501">Element '//h3/a[text()='Add Tariff Plan to Customer']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230906 06:28:38.654" endtime="20230906 06:28:57.510"/>
+</suite>
+<status status="FAIL" starttime="20230906 06:28:38.646" endtime="20230906 06:28:57.520"/>
+</suite>
+<status status="FAIL" starttime="20230906 06:28:38.562" endtime="20230906 06:28:57.529"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">step1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="BTVN">BTVN</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="5 Testcase">BTVN.5 Testcase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Guru Customer Testcase">BTVN.5 Testcase.Guru Customer Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230906 06:28:39.629" level="WARN">The chromedriver version (115.0.5790.170) detected in PATH at C:\Users\DUNG\Documents\webdriver\chromedriver.exe might not be compatible with the detected chrome version (116.0.5845.179); currently, chromedriver 116.0.5845.96 is recommended for chrome 116.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
